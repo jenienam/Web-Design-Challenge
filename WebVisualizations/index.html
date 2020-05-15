@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <header style="width: -webkit-fill-available;">
+
+
+<body>
+  <div class="navigation">
+	  <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-content">
+                <a href="temperature.html">Max Temperature</a>
+                <a href="humidity.html">Humidity</a>
+                <a href="cloudiness.html">Cloudiness</a>
+                <a href="windspeed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+			  <a class="nav-link" href="comparison.html">Comparison</a>
+			</li>
+            <li class="nav-item">
+			  <a class="nav-link" href="data.html">Data</a>
+			</li>
+      </ul>
+
+      </div>
+      </nav>
+  </div>
+  
+  <div class="container pt-5 px-0">
+    <div class="row">
+      <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 bg-light">
+        <h1 class="description-header">Summary: City Latitude vs. </h2>
+        <hr>
+        <br>
+        <img src="Resources/assets/images/Fig1.png" class="w-50 mr-2 float-left" alt="Latitude vs. Max Temperature">
+        <p class="p-2">The purpose of this project was to determine how weather changes as you approach the equator (i.e. as latitude increases).  To perform this analysis we used the OpenWeatherMap API tp pull weather data from over 500 randomly selected cities.</p>
+        <p class="p-2">After assembling the data, Matplotlib was used to plot the aspects of weather vs. lattitude. Factors that were considered were: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as a part of the analysis, as well as explanations and descriptions of trends and correlations present.</p>
+
+      </div>
+      <div class="col-lg-1 col-md-1"></div>
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 bg-light">
+        <h3 class="text-info pt-4 pl-2 pr-2 pb-2">Visualizations</h3>
+        <hr>
+        <br>
+        <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" class="w-50 p-2" alt="City Latitude vs. Max Temperature"></a>
+        <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" class="w-50 p-2 float-right" alt="City Latitude vs. Humidity"></a>
+        <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" class="w-50 p-2" alt="City Latitude vs. Cloudiness"></a>
+        <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" class="w-50 p-2 float-right" alt="City Latitude vs. Wind Speed"></a>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="footer">
+  <hr id="hr3">
+  <p id="footer">All rights reserved</p>
+</div>
+
+</body>
+ 
+</html>
